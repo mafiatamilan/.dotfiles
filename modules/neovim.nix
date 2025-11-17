@@ -1,42 +1,33 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.neovim = {
     enable = true;
-    defaultEditor = true;
-
-    plugins = with pkgs.vimPlugins; [
-      gruvbox
-      nvim-lspconfig
-      nvim-cmp
-      cmp-nvim-lsp
-      cmp-buffer
-      cmp-path
-      cmp-cmdline
-      luasnip
-      cmp_luasnip
-      friendly-snippets
-      lspkind-nvim
-      nvim-treesitter.withAllGrammars
-      telescope-nvim
-      plenary-nvim
-      lualine-nvim
-      vim-suda
-    ];
-
-    extraLuaPackages = luaPkgs: with luaPkgs; [
-      lua-cjson
-    ];
+    viAlias = true;
+    vimAlias = true;
+    withNodeJs = true;
+    withPython3 = true;
+    withRuby = true;
   };
 
-  home.file.".config/nvim/init.lua".text = /* lua */ ''
-    -- Your entire Lua config here
-    -- Consider moving this into a separate init.lua file later for modularity
-    vim.o.number = true
-    vim.o.relativenumber = true
-    vim.o.termguicolors = true
-    vim.cmd("colorscheme gruvbox")
-    -- ...
-  '';
+
+  #######################################
+  # Install Kickstart.nvim configuration
+  #######################################
+  home.file."${config.xdg.configHome}/nvim".source = pkgs.fetchFromGitHub {
+    owner = "nvim-lua";
+    repo = "kickstart.nvim";
+    rev = "master";
+    sha256 = "0gs3c43f9liyf50a5ycdrzgfldn2rx24yfryr1qm8hfrnzrp97s7";
+  };
+
+  #######################################
+  # Add compiler and build tools for Neovim plugins
+  #######################################
+  home.packages = with pkgs; [
+    gcc          # C compiler
+    gnumake      # For make-based builds
+    pkg-config   # For detecting system libs
+  ];
 }
 

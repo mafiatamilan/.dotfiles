@@ -7,12 +7,12 @@
     vscode
     spotify
     lua-language-server
+    vlc
     seclists
     python313Packages.dirsearch
     pyright
     nodePackages.typescript-language-server
     figma-linux
-    unityhub
     burpsuite
     discord
     obsidian

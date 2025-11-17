@@ -15,126 +15,127 @@
 
   # Make sure your custom theme file is linked properly
   home.file.".config/zellij/themes/cyber-noir.kdl".text = ''
-    themes {
-      cyber-noir {
+  themes {
+    nightfox {
         text_unselected {
-            base 145 243 228
-            background 0 0 0
-            emphasis_0 255 127 80
-            emphasis_1 0 229 229
-            emphasis_2 0 255 0
-            emphasis_3 255 0 255
+            base 174 175 176
+            background 41 57 79
+            emphasis_0 244 162 97
+            emphasis_1 99 205 207
+            emphasis_2 129 178 154
+            emphasis_3 157 121 214
         }
         text_selected {
-            base 145 243 228
-            background 11 14 26
-            emphasis_0 255 127 80
-            emphasis_1 0 229 229
-            emphasis_2 0 255 0
-            emphasis_3 255 0 255
+            base 174 175 176
+            background 41 57 79
+            emphasis_0 244 162 97
+            emphasis_1 99 205 207
+            emphasis_2 129 178 154
+            emphasis_3 157 121 214
         }
         ribbon_selected {
-            base 0 0 0
-            background 0 255 0
-            emphasis_0 255 87 141
-            emphasis_1 255 127 80
-            emphasis_2 255 0 255
-            emphasis_3 51 119 255
+            base 41 57 79
+            background 129 178 154
+            emphasis_0 201 79 109
+            emphasis_1 244 162 97
+            emphasis_2 157 121 214
+            emphasis_3 113 156 214
         }
         ribbon_unselected {
-            base 0 0 0
-            background 145 243 228
-            emphasis_0 255 87 141
-            emphasis_1 145 243 228
-            emphasis_2 51 119 255
-            emphasis_3 255 0 255
+            base 41 57 79
+            background 205 206 207
+            emphasis_0 201 79 109
+            emphasis_1 174 175 176
+            emphasis_2 113 156 214
+            emphasis_3 157 121 214
         }
         table_title {
-            base 0 255 0
+            base 129 178 154
             background 0
-            emphasis_0 255 127 80
-            emphasis_1 0 229 229
-            emphasis_2 0 255 0
-            emphasis_3 255 0 255
+            emphasis_0 244 162 97
+            emphasis_1 99 205 207
+            emphasis_2 129 178 154
+            emphasis_3 157 121 214
         }
         table_cell_selected {
-            base 145 243 228
-            background 11 14 26
-            emphasis_0 255 127 80
-            emphasis_1 0 229 229
-            emphasis_2 0 255 0
-            emphasis_3 255 0 255
+            base 174 175 176
+            background 25 35 48
+            emphasis_0 244 162 97
+            emphasis_1 99 205 207
+            emphasis_2 129 178 154
+            emphasis_3 157 121 214
         }
         table_cell_unselected {
-            base 145 243 228
-            background 0 0 0
-            emphasis_0 255 127 80
-            emphasis_1 0 229 229
-            emphasis_2 0 255 0
-            emphasis_3 255 0 255
+            base 174 175 176
+            background 41 57 79
+            emphasis_0 244 162 97
+            emphasis_1 99 205 207
+            emphasis_2 129 178 154
+            emphasis_3 157 121 214
         }
         list_selected {
-            base 145 243 228
-            background 11 14 26
-            emphasis_0 255 127 80
-            emphasis_1 0 229 229
-            emphasis_2 0 255 0
-            emphasis_3 255 0 255
+            base 174 175 176
+            background 25 35 48
+            emphasis_0 244 162 97
+            emphasis_1 99 205 207
+            emphasis_2 129 178 154
+            emphasis_3 157 121 214
         }
         list_unselected {
-            base 145 243 228
-            background 0 0 0
-            emphasis_0 255 127 80
-            emphasis_1 0 229 229
-            emphasis_2 0 255 0
-            emphasis_3 255 0 255
+            base 174 175 176
+            background 41 57 79
+            emphasis_0 244 162 97
+            emphasis_1 99 205 207
+            emphasis_2 129 178 154
+            emphasis_3 157 121 214
         }
         frame_selected {
-            base 0 255 0
+            base 129 178 154
             background 0
-            emphasis_0 255 127 80
-            emphasis_1 0 229 229
-            emphasis_2 255 0 255
+            emphasis_0 244 162 97
+            emphasis_1 99 205 207
+            emphasis_2 157 121 214
             emphasis_3 0
         }
         frame_highlight {
-            base 255 127 80
+            base 244 162 97
             background 0
-            emphasis_0 255 0 255
-            emphasis_1 255 127 80
-            emphasis_2 255 127 80
-            emphasis_3 255 127 80
+            emphasis_0 157 121 214
+            emphasis_1 244 162 97
+            emphasis_2 244 162 97
+            emphasis_3 244 162 97
         }
         exit_code_success {
-            base 0 255 0
+            base 129 178 154
             background 0
-            emphasis_0 0 229 229
-            emphasis_1 0 0 0
-            emphasis_2 255 0 255
-            emphasis_3 51 119 255
+            emphasis_0 99 205 207
+            emphasis_1 41 57 79
+            emphasis_2 157 121 214
+            emphasis_3 113 156 214
         }
         exit_code_error {
-            base 255 87 141
+            base 201 79 109
             background 0
-            emphasis_0 255 215 0
+            emphasis_0 219 192 116
             emphasis_1 0
             emphasis_2 0
             emphasis_3 0
         }
         multiplayer_user_colors {
-            player_1 255 0 255
-            player_2 51 119 255
+            player_1 157 121 214
+            player_2 113 156 214
             player_3 0
-            player_4 255 215 0
-            player_5 0 229 229
+            player_4 219 192 116
+            player_5 99 205 207
             player_6 0
-            player_7 255 87 141
+            player_7 201 79 109
             player_8 0
             player_9 0
             player_10 0
         }
-      }
     }
+}
   '';
+
 }
 

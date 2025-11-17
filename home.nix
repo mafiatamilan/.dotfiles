@@ -6,6 +6,8 @@
     ./modules/git.nix
     ./modules/neovim.nix
     ./modules/alacritty.nix
+    ./modules/waybar.nix
+    ./modules/tmux.nix
     ./modules/zellij.nix
   ];
 
