@@ -1,0 +1,99 @@
+/* ~/.config/waybar/style.css */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "monospace";
+    font-size: 12px;
+    font-weight: 600;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: #0a0a0a;
+    color: #f2f2f2;
+    border-bottom: 1px solid #e0102b;
+}
+
+#workspaces {
+    background: transparent;
+    padding: 0 4px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #5a5a5a;
+    background: transparent;
+    font-size: 10px;
+}
+
+#workspaces button.active {
+    color: #e0102b;
+}
+
+#workspaces button:hover {
+    color: #f2f2f2;
+    background: #161616;
+}
+
+#clock {
+    padding: 0 10px;
+    color: #f2f2f2;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: transparent;
+}
+
+#pulseaudio,
+#network,
+#custom-backlight,
+#battery,
+#tray {
+    padding: 0 10px;
+    margin: 0;
+    background: transparent;
+    color: #d8d8d8;
+    border-left: 1px solid #262626;
+}
+
+#pulseaudio {
+    color: #d8d8d8;
+}
+
+#network {
+    color: #2ecc71;
+    font-weight: 700;
+}
+
+#network.disconnected {
+    color: #e0102b;
+}
+
+#custom-backlight {
+    color: #d8d8d8;
+}
+
+#battery {
+    color: #d8d8d8;
+}
+
+#battery.warning {
+    color: #ff8a3d;
+}
+
+#battery.critical {
+    color: #ffffff;
+    background: #e0102b;
+}
+
+#tray {
+    padding: 0 8px;
+}
+
+#tray > .passive {
+    opacity: 0.5;
+}
+
+#tray > .needs-attention {
+    background: #e0102b;
+}

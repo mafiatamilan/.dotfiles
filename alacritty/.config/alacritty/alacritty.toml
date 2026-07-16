@@ -1,0 +1,76 @@
+# ~/.config/alacritty/alacritty.toml
+# Minimal black / white / red theme
+
+[window]
+padding    = { x = 12, y = 12 }
+decorations = "none"
+opacity     = 1.0
+dynamic_title = true
+
+[scrolling]
+history = 10000
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style   = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style   = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style   = "Italic"
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 600
+
+[cursor.vi_mode_style]
+shape = "Block"
+
+[colors.primary]
+background = "#0a0a0a"
+foreground = "#f2f2f2"
+
+[colors.cursor]
+text   = "#0a0a0a"
+cursor = "#e0102b"
+
+[colors.selection]
+text       = "#0a0a0a"
+background = "#e0102b"
+
+[colors.normal]
+black   = "#0a0a0a"
+red     = "#e0102b"
+green   = "#f2f2f2"
+yellow  = "#f2f2f2"
+blue    = "#6b6b6b"
+magenta = "#e0102b"
+cyan    = "#f2f2f2"
+white   = "#f2f2f2"
+
+[colors.bright]
+black   = "#1a1a1a"
+red     = "#ff3355"
+green   = "#ffffff"
+yellow  = "#ffffff"
+blue    = "#9a9a9a"
+magenta = "#ff3355"
+cyan    = "#ffffff"
+white   = "#ffffff"
+
+[bell]
+animation = "EaseOutExpo"
+duration  = 100
+color     = "#e0102b"
+
+[selection]
+save_to_clipboard = true
+
+[terminal]
+osc52 = "CopyPaste"
